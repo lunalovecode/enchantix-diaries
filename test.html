@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <style>
+            body {
+                overflow: hidden;
+                background-color: pink;
+            }
+            #flipbook {
+                margin: 10% auto;
+                width: 660px;
+                height: 400px;
+            }
+            #flipbook .turn-page {
+                -webkit-background-size: 100% 100%;
+                background-size: 100% 100%;
+                background-color: white;
+            }
+            #flipbook .cover {
+                background-color: hotpink;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="flipbook">
+            <div class="cover"> Turn.js </div>
+            <div class="cover">Hello</div>
+            <div>Dear Diary</div>
+            <div> Page 2 </div>
+            <div> Page 3 </div>
+            <div> Page 4 </div>
+            <div class="cover"></div>
+            <div class="cover"></div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./turn.min.js"></script>
+        <script type="text/javascript">
+            $(window).ready(function() {
+                $('#flipbook').turn({
+                                    display: 'double',
+                                    acceleration: true,
+                                    gradients: !$.isTouch,
+                                    elevation:50,
+                                    when: {
+                                        turned: function(e, page) {
+                                            /*console.log('Current view: ', $(this).turn('view'));*/
+                                        }
+                                    }
+                                });
+            });
+        </script>
+    </body>
+</html>

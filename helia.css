@@ -1,0 +1,26 @@
+body {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ffac6c;
+}
+
+#book .cover {
+    background-color: #e94721;
+}
+
+#helia {
+    background-color: #e94721;
+}
+
+#helia a {
+    color: white;
+}
+
+#blossom a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#hyunmi a {
+    font-family: Arial, Helvetica, sans-serif;
+}

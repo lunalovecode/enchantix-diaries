@@ -1,0 +1,27 @@
+body {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ffcff6;
+    justify-content: center;
+}
+
+#book .cover {
+    background-color: #ff0bd4;
+}
+
+#blossom {
+    background-color: #ff0bd4;
+}
+
+#blossom a {
+    color: white;
+}
+
+#hyunmi a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#helia a {
+    font-family: Arial, Helvetica, sans-serif;
+}

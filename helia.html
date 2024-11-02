@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Blossom - Enchantix Diaries</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Indie+Flower&family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./helia.css">
+    </head>
+    <body>
+        <button id="switch-font">Switch to Readable Font</button>
+        <div id="bar">
+            <div id="blossom"><a href="./blossom.html">Blossom's Diary</a></div>
+            <div id="hyunmi"><a href="./hyunmi.html">Hyun-mi's Diary</a></div>
+            <div id="helia"><a href="./helia.html">Helia's Diary</a></div>
+        </div>
+        <div id="book">
+            <div class="cover"></div>
+            <div class="cover"></div>
+            <div>
+                <h3><del>Wensday</del> <ins>Wednesday,</ins> November 14</h3>
+                <p>The project went something like this:</p>
+                <p>Me: On the right, we have Soleil Starborne. A rare hybrid of the "ace student" and "extrovert" species.</p>
+                <p>Soleil: Oh, hi!</p>
+                <p>Blackthorne: Extremely eager to help others to a concerning degree. May or may not turn out to be a workaholic in ten years' time.</p>
+                <p>Soleil: Okay...?</p>
+                <p>Me: On the left, we have Blossom Valentine.</p>
+                <p>Blossom: Hi!</p>
+                <p>Me: Sweet and energetic.</p>
+                <p>Blackthorne: We are beginning to suspect that she is not a fairy, but a bag of sugar disguised as one.</p>
+                <p>Blossom: Um... Thanks...?</p>
+            </div>
+            <div>
+                <p>Me: Now we have Heath Arborea.</p>
+                <p>Heath: Hi. [Blackthorne creates a vine at her feet. When Heath investigates, she is pulled down by it.] Woah!</p>
+                <p>Blackthorne: Rather gull—</p>
+                <p>Me: —hard to provoke. But if you somehow manage to, <u>RUN</u>. Her plant magic is unmatched by anyone at this school.</p>
+                <p>Heath: Aww...</p>
+                <p>Me: And the only one who can one-up her in terms of physical strength is Ari. Who so happens to be her older brother. <u>No one</u> has crossed her unscathed. [Blackthorne glares at me.] I'm just saying it as it is. Have <u>you</u> fought her?</p>
+                <p>Blackthorne: Stay quiet. In front of us are Khione Frostfall, Ariadne Hallows, and Persephone Tempest, otherwise known as the "New Trix." They are rarely seen apart.</p>
+                <p>Me: They bully other students for no reason other than their own amusement. When you attack one of them, all three of them can and WILL beat you to a pulp and make it look like an accident.</p>
+            </div>
+            <div>
+                <p>Blackthorne: And now we have Hyun-mi Seo. A lose—</p>
+                <p>Me: —lonely—</p>
+                <p>Blackthorne: —specimen that doesn't have frie—</p>
+                <p>Me: —prefers to spend her time alone.</p>
+            </div>
+            <div>
+                <h3>Tuesday, December 11</h3>
+                <p>"Are you sure?" I asked. "Heath's too nice."</p>
+                <p>"Come on, Helia. Are you a coward or what?" Blackthorne teased.</p>
+            </div>
+            <div>
+                <h3>Saturday, March 9</h3>
+                <p>"Happy birthday, Heath."</p>
+                <p>"Thanks."</p>
+                <p>"I thought I could... you know... make up for the stuff Blackthorne and I did?"</p>
+            </div>
+            <div>
+                <h3>Monday, March 11</h3>
+                <p>Hyun-mi said she didn't need my help. I have the Dragon's Flame! You know, the <u>ultimate</u> healing power? Does she think I'm not good enough?</p>
+                <p>Or is it because of Blackthorne? What are you saying, Helia?! You're an idiot! <u>OF COURSE</u> it's her! Hyun-mi doesn't trust me after those pranks!</p>
+                <p>This has gone on for too long. I need to put my foot down. Saturday, March 23. Mark my words.</p>
+                <p class="signature">-Helia</p>
+            </div>
+            <div>
+                <h3>Tuesday, March 12</h3>
+                <p>It's the day after Blossom almost died. And it's Soleil's birthday, I guess.</p>
+            </div>
+            <div>
+                <h3>Saturday, March 23</h3>
+                <p>It's over. I did it. I finally told her "No." Blackthorne and I are not friends anymore.</p>
+            </div>
+            <div class="cover"></div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./turn.min.js"></script>
+    <script src="./script.js"></script>
+    <script type="text/javascript">
+        $(window).ready(function() {
+            $('#book').turn({
+                                display: 'double',
+                                acceleration: true,
+                                gradients: !$.isTouch,
+                                elevation:50,
+                                when: {
+                                    turned: function(e, page) {
+                                        /*console.log('Current view: ', $(this).turn('view'));*/
+                                    }
+                                }
+                            });
+        });
+    </script>
+</html>
